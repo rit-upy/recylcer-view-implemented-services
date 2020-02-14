@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout_for_the_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="348dp"
+        android:layout_height="296dp"
+        android:layout_margin="6dp">
+
+        <ImageView
+            android:id="@+id/image_for_the_event"
+            android:layout_width="348dp"
+            android:layout_height="296dp"
+            android:src="@drawable/images" />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:alpha="0.41"
+            android:text="It's His Birthday"
+            android:textColor="#f93f3f"
+            android:textSize="21sp"
+            app:fontFamily="@font/roboto_condensed_bold" />
+
+        <!--This LinearLayout is used for drawing the text inside the rectangle -->
+        <LinearLayout
+            android:layout_width="242dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/rectangle"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_description"
+                android:layout_width="198dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:lineHeight="16dp"
+                android:text="This is Sample Text"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+
+                app:fontFamily="@font/roboto_bold" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="37dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="142dp"
+            android:lineHeight="19dp"
+
+            android:text="Dates"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:fontFamily="@font/roboto_condensed_bold" />
+
+        <LinearLayout
+            android:layout_width="86dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="142dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="12 June 2019"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto" />
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineHeight="16dp"
+                android:text="13 June 2019"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:fontFamily="@font/roboto" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/reject_button"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="REJECT"
+        android:textColor="#4B0082"
+        android:textStyle="bold"
+        tools:ignore="KeyboardInaccessibleWidget" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="103dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginLeft="248dp"
+        android:background="#4B0082"
+
+        android:text="ACCEPT"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
